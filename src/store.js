@@ -4,6 +4,10 @@ import reducer from './reducers';
 
 const socket = io();
 
+const middlewares = [
+
+]
+
 const store = createStore(reducer, compose(
   applyMiddleware(...middlewares)
 ));
